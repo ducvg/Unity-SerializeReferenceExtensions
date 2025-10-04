@@ -8,7 +8,7 @@ using UnityEditor.IMGUI.Controls;
 namespace MackySoft.SerializeReferenceExtensions.Editor
 {
 
-	[CustomPropertyDrawer(typeof(SubclassSelectorAttribute))]
+	[CustomPropertyDrawer(typeof(SubclassAttribute))]
 	public class SubclassSelectorDrawer : PropertyDrawer {
 
 		struct TypePopupCache {
