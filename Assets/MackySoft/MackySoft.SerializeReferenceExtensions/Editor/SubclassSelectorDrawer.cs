@@ -46,7 +46,7 @@ namespace MackySoft.SerializeReferenceExtensions.Editor
 
 #if UNITY_2021_3_OR_NEWER
 				// Override the label text with the ToString() of the managed reference.
-				var subclassSelectorAttribute = (SubclassSelectorAttribute)attribute;
+				var subclassSelectorAttribute = (SubclassAttribute)attribute;
 				if (subclassSelectorAttribute.UseToStringAsLabel && !property.hasMultipleDifferentValues)
 				{
 					object managedReferenceValue = property.managedReferenceValue;
