@@ -86,16 +86,16 @@ public sealed class NetworkActorAction3 : IContravarianceAction<IActor>, ICovari
 public class Example_Generics : MonoBehaviour
 {
 
-    [SerializeReference, SubclassSelector]
+    [SerializeReference, Subclass]
     public IContravarianceAction<INetworkActor> contravarianceAction = null;
 
-    [SerializeReference, SubclassSelector]
+    [SerializeReference, Subclass]
     public BaseAction<IActor> baseAction = null;
 
-    [SerializeReference, SubclassSelector]
+    [SerializeReference, Subclass]
     public List<IContravarianceAction<INetworkActor>> contravarianceActions = new List<IContravarianceAction<INetworkActor>>();
 
-    [SerializeReference, SubclassSelector]
+    [SerializeReference, Subclass]
     public List<ICovarianceAction<INetworkActor>> covarianceActions = new List<ICovarianceAction<INetworkActor>>();
 
 }
